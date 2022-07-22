@@ -93,3 +93,12 @@ function dem(){
     document.getElementById("dem").innerHTML=("Số chia hết cho 3 nhỏ hơn 1000: " + n);
     console.log(n);
 }
+function count(){
+    var n =  Number(document.getElementById("nn").value);
+    var content ="";
+    for (var i= 0 ; i<= n ; i++){
+        content +=i + ", ";
+        console.log(i)
+        document.getElementById("count").innerHTML = (content);
+    }
+}
