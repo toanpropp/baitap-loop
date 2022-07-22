@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <input type="radio" name="slider" checked id="ex1">
+      <input type="radio" name="slider" id="ex2">
+      <input type="radio" name="slider" id="ex3">
+      <input type="radio" name="slider" id="ex4">
+      <input type="radio" name="slider" id="ex5">
+      <input type="radio" name="slider" id="ex6">
+      <input type="radio" name="slider" id="ex7">
+      <input type="radio" name="slider" id="ex8">
+      <div class="list">
+        <label for="ex1" class="ex1">
+        <span class="title">Exercise 1</span>
+      </label>
+      <label for="ex2" class="ex2">
+        <span class="title">Exercise 2</span>
+      </label>
+      <label for="ex3" class="ex3">
+        <span class="title">Exercise 3</span>
+      </label>
+      <label for="ex4" class="ex4">
+        <span class="title">Exercise 4</span>
+      </label>
+      <label for="ex5" class="ex5">
+        <span class="title">Exercise 5</span>
+      </label>
+      <label for="ex6" class="ex6">
+        <span class="title">Exercise 6</span>
+      </label>
+      <label for="ex7" class="ex7">
+        <span class="title">Exercise 7</span>
+      </label>
+      <label for="ex8" class="ex8">
+        <span class="title">Exercise 8</span>
+      </label>
+      <div class="slider"></div>
+    </div>
+
+      <div class="text-content">
+        <div class="ex1 text">
+          <div class="title">
+            Prime Number
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                <strong>input:</strong><br>
+                number limited<br>
+
+                <strong>process:</strong> pseudo code<br>
+                Inside the inner for loop, you check whether i is divisible by any number from 2 to (i - 1) using the condition i % j == 0. If i % j is 0, it means i is not a prime number.<br>
+                
+                <strong>output:</strong><br>
+                all prime numbers
+                <br>
+              </p>
+            </div>
+          </div>
+              <input type="text" class="box-count" id="number" value="" placeholder="number width 2 digit ">
+              
+              <textarea name="" id="result" cols="30" rows="10" class="box-count box3 box2"></textarea>
+              <button onclick="ip1()">Count</button>
+          
+        </div>
+        <div class="ex2 text">
+          <div class="title">
+            even number & odd number
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                <strong>input:</strong><br>
+                press button<br>
+
+                <strong>process:</strong> pseudo code<br>
+               even number = number % 2 === 0<br>
+                
+                <strong>output:</strong><br>
+                all even and odd numbers
+                <br>
+              </p>
+            </div>
+          </div>
+              
+              <button onclick="EandO()">Count</button>
+              <!-- <div id="Rs" class="alert"></div>
+              <div id="odd" class="alert"></div> -->
+              <!-- <input type="text" class="box-count box2" id="Rs"> -->
+              <textarea name="" id="Rs" cols="30" rows="10" class="box-count box2"></textarea>
+              
+              <!-- <input class="box-count box-result" type="text" id="Pri" value=""> -->
+          
+        </div>
+        <div class="ex3 text">
+          <div class="title">
+            Tìm số nguyên dương nhỏ nhất
+          </div>
+          <div class="container">
+            
+            <button onclick="sum()">Count</button>
+            <!-- <div id="Rs" class="alert"></div>
+            <div id="odd" class="alert"></div> -->
+            <!-- <input type="text" class="box-count box2" id="Rs"> -->
+            <textarea name="" id="Rs1" cols="30" rows="10" class="box-count box2"></textarea>
+            
+            <!-- <input class="box-count box-result" type="text" id="Pri" value=""> -->
+        
+          </div>
+              
+        </div>
+        <div class="ex4 text">
+          <div class="title">
+            Tính tổng
+          </div>
+          <div class="container container-bot">
+            
+            <div class="row">
+              <div class="col">
+                <input value="" class="count-box"id="numX" type="number"placeholder="x">
+                <input value="" class="count-box"id="numN" type="number"placeholder="n">
+              </div>
+              <button onclick="sn()">guess</button>
+              <textarea name="" id="Rs2" cols="30" rows="10" class="box-count box2"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="ex5 text">
+          <div class="title">
+            Tính Giai thừa
+          </div>
+          <div class="container container-bot">
+            
+            <div class="row">
+              <div class="col">
+               
+                <input value="" class="count-box"id="numn" type="number"placeholder="n">
+              </div>
+              <button onclick="giaithua()">Count</button>
+              <textarea name="" id="Rs3" cols="30" rows="10" class="box-count box2"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="ex6 text">
+          <div class="title">
+            Tạo thẻ div
+          </div>
+            <div class="container">
+            
+              <button onclick="lechan()">show</button>
+              <div class="content box-count box2">
+                <div class="containerdiv">
+                  <div class="div">div lẻ</div>
+                  <div class="div">div chẵn</div>
+                  <div class="div">div lẻ</div>
+                  <div class="div">div chẵn</div>
+                  <div class="div">div lẻ</div>
+                  <div class="div">div chẵn</div>
+                  <div class="div">div lẻ</div>
+                  <div class="div">div chẵn</div>
+                  <div class="div">div lẻ</div>
+                  <div class="div">div chẵn</div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+        <div class="ex7 text">
+          <div class="title">
+            Đếm số chia hết cho 3
+          </div>
+            <div class="container">
+              <div class="container-bot">
+                <div class="row">
+                  <button onclick="dem()">Count</button>
+                  <textarea name="" id="dem" cols="30" rows="10" class="box-count box2"></textarea>
+                </div>
+              </div>
+            </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
